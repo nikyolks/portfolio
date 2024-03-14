@@ -1,0 +1,189 @@
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif; /* Apply font-family to the whole document */
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 20px;
+}
+
+.nav-item{
+    margin-right: 20px;
+}
+
+.home-view-container{
+    margin-top: 2%;
+    display: flex;
+    margin-bottom: 15%;
+}
+
+.home-view-text{
+    margin-top: 18%;
+    margin-left: 200px;
+}
+
+.home-view-text h1{
+    font-size: 80px;
+    color: #E1E1E1;
+}
+
+.home-view-text h3{
+    font-size: 30px;
+    color: #F4CE14;
+}
+
+.home-view-pic {
+    margin-top: 7%;
+    margin-left: 12%;
+}
+
+.aboutme-view {
+    background-color: #E1E1E1;
+    text-align: center;
+    color: black;
+    padding: 50px;
+}
+
+.aboutme-view h1, .aboutme-view span {
+    margin-bottom: 20px;
+}
+
+.experience-view {
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+.experience-view h1 {
+    color: #E1E1E1;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.experience-container h2 {
+    color: #E1E1E1;
+    padding: 5%;
+}
+
+.experience-box-1,
+.experience-box-2,
+.experience-box-3 {
+    flex: 1;
+    height: 500px;
+    margin: 0 10px;
+    border: 2px solid #F4CE14;
+    border-radius: 10%;
+}
+
+.experience-box-1 h6,
+.experience-box-2 h6,
+.experience-box-3 h6 {
+    color: #E1E1E1;
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+}
+
+.experience-box-1 img {
+    width: 170px;
+    height: auto;
+}
+
+.experience-box-2 img {
+    margin-top: 4%;
+    margin-bottom: 5px;
+    width: 180px;
+    height: auto; 
+}
+
+.experience-box-3 img {
+    width: 100px;
+    height: auto; 
+}
+
+.contacts-view {
+    background-color: #E1E1E1;
+    text-align: center;
+    color: black;
+    padding: 50px;
+}
+
+.contacts-view img {
+    width: 50px;
+    height: auto;
+    margin: 20px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        justify-content: center;
+    }
+    .home-view-container,
+    .home-view-text,
+    .home-view-pic {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .home-view-text {
+        margin-left: 0;
+    }
+    .home-view-pic img {
+        align-items: center;
+        max-width: 80%;
+        height: auto;
+    }
+    .experience-container {
+        flex-direction: column;
+    }
+    .experience-box-1,
+    .experience-box-2,
+    .experience-box-3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .aboutme-view,
+    .experience {
+        margin-right: 0;
+        width: 100%; 
+        text-align: center; 
+        padding: 0;
+        margin: 0; 
+    }
+    .home-view-text {
+        text-align: center;
+    }
+    .aboutme-view h1 {
+        padding: 20px; /* Adjust the padding value as needed */
+    }
+}
+
+@media (max-width: 575px) {
+    .home-view-text h1 {
+        font-size: 50px;
+    }
+    .home-view-text h3 {
+        font-size: 20px;
+    }
+    .experience-box-1 h6,
+    .experience-box-2 h6,
+    .experience-box-3 h6 {
+        font-size: 16px;
+    }
+}
